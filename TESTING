@@ -1,0 +1,44 @@
+spawn(function()
+getgenv().owner = "XxxTheRealJirenXxx"
+getgenv().admin = "someone"
+getgenv().admin = "someone"
+getgenv().admin = "someone"
+getgenv().admin = "someone"
+getgenv().admin = "someone"
+getgenv().admin = "someone"
+getgenv().admin = "someone"
+
+game:GetService("Players"):FindFirstChild(getgenv().owner).Chatted:connect(function(msg)
+   if msg == "!kill" then 
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+   end
+end)
+
+
+
+game:GetService("Players"):FindFirstChild(getgenv().owner).Chatted:connect(function(msg)
+   if msg == "!freeze" then 
+game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+   end
+end)
+
+game:GetService("Players"):FindFirstChild(getgenv().owner).Chatted:connect(function(msg)
+   if msg == "!unfreeze" then 
+game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+   end
+end)
+
+
+game:GetService("Players"):FindFirstChild(getgenv().owner).Chatted:connect(function(msg)
+   if msg == "!kick" then
+game:Shutdown()
+   end
+end)
+
+
+game:GetService("Players"):FindFirstChild(getgenv().admin).Chatted:connect(function(msg)
+   if msg == "!test1" then -- put the command you want here
+print("e")
+   end
+end)
+end)
